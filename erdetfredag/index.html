@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="no">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Er det Fredag?</title>
+        
+        <link rel="icon" type="image/png" href="/resources/nrgu_logo.png">
+        <link rel="stylesheet" href="../erdetfredag/style.css">
+        <link rel="stylesheet" href="./../main.css">
+    </head>
+    <body>
+        <h1>Er det Fredag?</h1>
+        
+        <div id="0">
+            <h3 id="no-text" style="text-align: center; margin-top: 100px;">Vil du virkelig vite om det er fredag i dag?!</h2>
+            <p id="countdown"></p>
+
+            <div class="button-container" id="no-button" style="display: flex; justify-content: center;">
+                <button class="button clickOnEnter" id="countdownBtn" onclick="countdown(2)">Ja!</button>
+                <!--<button id="no-button" onclick="closeWindow()">Nei!</button> -->
+
+                <a href=".." class="button">
+                    <div>
+                        <edfBtn style="text-decoration: none; color: black;">Nei!</edfBtn>
+                    </div>
+                </a>
+            </div>
+        </div>
+
+
+        <div id="ja">
+            <h2 onclick="changeBackgroundSize('1%')">JA!</h2>
+        </div>
+
+        <div id="nei">
+            <h2 onclick="changeBackgroundSize('1%')">NEI!:(</h2>
+        </div>
+
+
+        <h2 id="value"><noscript>Error: JavaScript not Found</noscript></h2>
+
+        <script src="../erdetfredag/script.js"></script>
+        <script src="../main.js"></script>
+    </body>
+</html>

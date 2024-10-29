@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="icon" type="image/png" href="../../resources/nrgu_logo.png">
+    <link rel="stylesheet" href="../../dagsrutine/style.css">
+    <link rel="stylesheet" href="../../dagsrutine/main/Index.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playwrite+GB+S:ital,wght@0,100..400;1,100..400&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Playwrite+GB+S:ital,wght@0,100..400;1,100..400&display=swap" rel="stylesheet">
+</head>
+<body onload="loadData()" class="gradient-background">
+
+    <img src="../../resources/backButton.svg" class="exitDagplanlegger" onclick="window.location.href='/dagsrutine'" alt="Tilbake Knapp" title="Tilbake Knapp">
+    <div class="main-container">
+        <div class="header">
+            <h1>Gjøremål</h1>
+            <h2 id="weekDisplay">Uke 0</h2>
+        </div>    
+        <div class="hver-dag">
+            <h3>Hver dag:</h3>
+            <fieldset>
+                <legend>Opprett Mål</legend>
+                <div class="form-container">
+                    <form class="hverDagForm" id="hverDagForm">
+                        <input placeholder="Aktivitet..." id="activity0" name="activity" type="text"  required>
+                        <input placeholder="Varighet..." id="time0" name="time" type="text" required>
+                        <select name="color" id="colorPicker0" required>
+                            <option value="">Velg en farge</option> <!-- Empty value forces user to pick a color -->
+                            <option value="dark-blue">Mørke Blå</option>
+                            <option value="red">Rød</option>
+                            <option value="green">Grønn</option>
+                            <option value="purple">Lilla</option>
+                            <option value="brown">Brun</option>
+                            <option value="orange">Oransje</option>
+                        </select>
+                    </form>
+                    <button id="toDoADayBtn">Legg til</button>
+                </div>
+            </fieldset>
+            <ul id="hverDagListe"></ul>
+         <button class="no-content" id="lagreHverDag-btn" >Opprett</button>
+            </div>
+
+            <div class="velg-3">
+                <h3>Velg 3 ekstra mål hver dag:</h3>
+                <fieldset>
+                    <legend>Opprett Mål</legend>
+                    <div class="form-container">
+                        <form class="treOmDagenForm" id="treOmDagenForm">
+                            <input placeholder="Aktivitet..." id="activity1" name="activity" type="text" required>
+                            <input placeholder="Varighet..." id="time1" name="time" type="text" required>
+                            <select name="color" id="colorPicker1" required>
+                                <option value="">Velg en farge</option> <!-- Empty value forces user to pick a color -->
+                                <option value="dark-blue">Mørke Blå</option>
+                                <option value="red">Rød</option>
+                                <option value="green">Grønn</option>
+                                <option value="purple">Lilla</option>
+                                <option value="brown">Brun</option>
+                                <option value="orange">Oransje</option>
+                            </select>
+                        </form>
+                        <button id="threeADayBtn">Legg til</button>
+                    </div>
+                </fieldset>            
+                <ul id="treOmDagenListe"></ul>
+                <button class="no-content" id="lagreTreOmDagen-btn" >Opprett</button>
+            </div>
+    </div>
+      
+
+    <script src="../../dagsrutine/main/Index.js"></script>
+</body>
+</html>

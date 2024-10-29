@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="icon" type="image/png" href="/resources/nrgu_logo.png">
+    <link rel="stylesheet" href="../gruppegenerator/style.css">
+    <link rel="stylesheet" href="../main.css">
+</head>
+<body onload="aquireSearchParams()">
+    <form>
+        <div id="inputs">
+            <div id="groupDiv">
+                <label for="groupSizeMin">Hvor mange skal det minst være i en gruppe?</label>
+                <input type="number" name="groupSizeMin" id="groupSizeMin" class="input">
+
+                <label for="groupSizeMax">Hvor mange skal det maks være i en gruppe?</label>
+                <input type="number" name="groupSizeMax" id="groupSizeMax" class="input">
+
+                <label for="groups">Hvor mange grupper skal det være?</label>
+                <input type="number" name="groups" id="groups" class="input">
+            </div>
+
+            <div id="checkboxes">
+                <p>Hvilke klasser skal gruppene inneholde?</p>
+
+                <div>
+                    <div>
+                        <input type="checkbox" id="8n" name="8n">
+                        <label for="8n">8N</label><br />
+                    </div>
+
+                    <div>
+                        <input type="checkbox" id="8r" name="8r">
+                        <label for="8r">8R</label><br />
+                    </div>
+
+                    <div>
+                        <input type="checkbox" id="8g" name="8g">
+                        <label for="8g">8G</label><br />
+                    </div>
+
+                    <div>
+                        <input type="checkbox" id="9n" name="9n">
+                        <label for="9n">9N</label><br />
+                    </div>
+
+                    <div>
+                        <input type="checkbox" id="9r" name="9r">
+                        <label for="9r">9R</label><br />
+                    </div>
+
+                    <div>
+                        <input type="checkbox" id="10n" name="10n">
+                        <label for="10n">10N</label><br />
+                    </div>
+
+                    <div>
+                        <input type="checkbox" id="10r" name="10r">
+                        <label for="10r">10R</label><br />
+                    </div>
+                </div>
+
+                <input id="generateBtn" class="clickOnEnter" type="submit" value="Generer Grupper">
+            </div>
+        </div>
+    </form>
+    <div id="listContainer"></div>
+
+    <script src="../gruppegenerator/index.js"></script>
+    <script src="../main.js"></script>
+</body>
+</html>
